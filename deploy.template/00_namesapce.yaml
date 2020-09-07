@@ -2,14 +2,4 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: #@ name()
----
-kind: Namespace
-apiVersion: v1
-metadata:
   name: #@ name() + "-system"
----
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: #@ name() + "-demo"
