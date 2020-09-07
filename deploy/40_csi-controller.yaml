@@ -151,9 +151,7 @@ spec:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
-            - matchExpressions:
-              - key: node-role.kubernetes.io/master
-                operator: DoesNotExist
+            - matchExpressions: null
       tolerations:
       - operator: Exists
         effect: NoSchedule

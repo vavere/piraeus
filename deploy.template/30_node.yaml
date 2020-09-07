@@ -224,8 +224,6 @@ spec:
                 operator: In
                 values:
                   - "true"
-              - key: node-role.kubernetes.io/master
-                operator: DoesNotExist
       tolerations:
       - operator: Exists
         effect: NoSchedule

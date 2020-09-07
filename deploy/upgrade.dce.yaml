@@ -127,9 +127,7 @@ spec:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
-            - matchExpressions:
-              - key: node-role.kubernetes.io/master
-                operator: Exists
+            - matchExpressions: null
       tolerations:
       - operator: Exists
         effect: NoSchedule
@@ -323,8 +321,6 @@ spec:
                 operator: In
                 values:
                 - "true"
-              - key: node-role.kubernetes.io/master
-                operator: DoesNotExist
       tolerations:
       - operator: Exists
         effect: NoSchedule
@@ -480,8 +476,6 @@ spec:
                 operator: In
                 values:
                 - "true"
-              - key: node-role.kubernetes.io/master
-                operator: DoesNotExist
       tolerations:
       - operator: Exists
         effect: NoSchedule
@@ -655,9 +649,7 @@ spec:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
-            - matchExpressions:
-              - key: node-role.kubernetes.io/master
-                operator: Exists
+            - matchExpressions: null
       tolerations:
       - operator: Exists
         effect: NoSchedule
@@ -1096,8 +1088,6 @@ spec:
                 operator: In
                 values:
                 - "true"
-              - key: node-role.kubernetes.io/master
-                operator: DoesNotExist
       tolerations:
       - operator: Exists
         effect: NoSchedule
