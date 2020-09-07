@@ -148,10 +148,6 @@ spec:
                 values:
                 - piraeus-csi-controller
             topologyKey: kubernetes.io/hostname
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions: null
       tolerations:
       - operator: Exists
         effect: NoSchedule

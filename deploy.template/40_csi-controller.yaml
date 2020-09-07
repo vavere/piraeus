@@ -172,14 +172,6 @@ spec:
                 values:
                 -  #@ csicontroller()
             topologyKey: kubernetes.io/hostname
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions:
-              #! - key: piraeus/controller
-              #!   operator: In
-              #!   values:
-              #!   - "true"
       tolerations:
       - operator: Exists
         effect: NoSchedule

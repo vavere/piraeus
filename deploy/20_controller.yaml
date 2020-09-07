@@ -118,11 +118,6 @@ spec:
       - name: log
         hostPath:
           path: /var/log/piraeus/linstor-controller
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions: null
       tolerations:
       - operator: Exists
         effect: NoSchedule

@@ -133,15 +133,6 @@ spec:
       - name: log
         hostPath:
           path: #@ "/var/log/" + name() + "/linstor-controller"
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions:
-              #! - key: #@ name() + "/controller"
-              #!   operator: In
-              #!   values:
-              #!   - "true"
       tolerations:
       - operator: Exists
         effect: NoSchedule
